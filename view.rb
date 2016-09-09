@@ -24,8 +24,14 @@ module View
     puts "#{result}"
   end
 
-  def self.complaint_display(label, description)
-    puts "#{label}: #{description}"
+  def self.complaint_display(complaint)
+    puts "Created Date: #{complaint.created_date}"
+    puts "Complaint Type: #{complaint.complaint_type}"
+    puts "Description: #{complaint.descriptor}"
+    puts "Address: #{complaint.incident_address}"
+    puts "Zip: #{complaint.incident_zip}"
+    puts "City: #{complaint.city}"
+    puts "Status: #{complaint.status}"
   end
 
   def self.separator
