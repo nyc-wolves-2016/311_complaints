@@ -13,16 +13,4 @@ class Complaint
     @city = args["city"].downcase.capitalize
     @status = args["status"].downcase.capitalize
   end
-
-  def display
-    results.complaints.each do |result|
-    puts result.created_date
-    puts result.complaint_type
-    puts result.descriptor
-    puts result.incident_address
-    puts result.incident_zip
-    puts result.city
-    puts result.status
-    puts "--------------------------------"
-  end
 end

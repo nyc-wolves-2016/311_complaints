@@ -4,6 +4,4 @@ class ComplaintResult
   def initialize(args = {})
     @complaints = args.fetch(:complaints, [])
   end
-
-
 end
