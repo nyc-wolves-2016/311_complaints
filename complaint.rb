@@ -1,5 +1,3 @@
-require_relative 'model'
-require_relative 'complaint_result'
 class Complaint
   include Parser
 
@@ -12,5 +10,11 @@ class Complaint
     @incident_zip = args["incident_zip"]
     @city = args["city"].downcase.capitalize
     @status = args["status"].downcase.capitalize
+  end
+
+  def display
+    self.each do |key, value|
+      "#{key}:  #{value}"
+    end
   end
 end
