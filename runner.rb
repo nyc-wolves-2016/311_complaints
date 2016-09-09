@@ -1,3 +1,3 @@
 require_relative 'controller'
 
-Controller.new({complaints: ComplaintResult, view: View})
+Controller.new({complaints: ComplaintResult, view: View}).run
