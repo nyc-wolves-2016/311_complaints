@@ -21,13 +21,13 @@ class Controller
       input = view.get_user_input
         results = Parser.parse_by(input)
         results.complaints.each do |result|
-          view.display(result.created_date)
-          view.display(result.complaint_type)
-          view.display(result.descriptor)
-          view.display(result.incident_address)
-          view.display(result.incident_zip)
-          view.display(result.city)
-          view.display(result.status)
+          view.complaint_display("Created Date",result.created_date)
+          view.complaint_display("Complaint Type",result.complaint_type)
+          view.complaint_display("Description", result.descriptor)
+          view.complaint_display("Incident Address", result.incident_address)
+          view.complaint_display("Incident Zip", result.incident_zip)
+          view.complaint_display("City", result.city)
+          view.complaint_display("Status", result.status)
           view.separator
           end
       end
