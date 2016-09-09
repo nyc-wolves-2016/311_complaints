@@ -9,8 +9,7 @@ class Controller
 
   def initialize(args={})
     @view = args.fetch(:view)
-    @complaints = args.fetch(:complaints)
-    run
+    @complaints = args.fetch(:complaints) {[]}
   end
 
   def run
