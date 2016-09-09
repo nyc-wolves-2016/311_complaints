@@ -1,7 +1,10 @@
 module View
 
-  def display_311_categories
-    
+  # def display_311_categories
+  #   #Rodent, Sewer, Plumbing, Noise, Illegal Parkign, Elevator, Heat/hot water
+  # end
+  def welcome
+    puts "Welcome to 3-1-What!?"
   end
 
   def prompt_user_for_zip
@@ -18,6 +21,10 @@ module View
 
   def display(result)
     puts "#{result}"
+  end
+
+  def separator
+    puts "-----------------------------------"
   end
 
 end
