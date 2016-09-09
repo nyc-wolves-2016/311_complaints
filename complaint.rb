@@ -11,10 +11,4 @@ class Complaint
     @city = args["city"].downcase.capitalize
     @status = args["status"].downcase.capitalize
   end
-
-  def display
-    self.each do |key, value|
-      "#{key}:  #{value}"
-    end
-  end
 end
