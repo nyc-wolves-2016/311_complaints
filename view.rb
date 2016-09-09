@@ -5,7 +5,7 @@ module View
   # end
   def self.welcome
     puts "Welcome to 3-1-What!?"
-    mouse1
+    mice
   end
 
   def self.prompt_user_for_zip
@@ -46,6 +46,19 @@ module View
     puts "(o)(o)--."
     puts " \../ (  )"
     puts " m\/m--m'`--."
+  end
+
+  def self.mice
+    puts "          _   _"
+    puts "         (q\\_/p)"
+    puts "          /. .\\         __"
+    puts "   ,__   =\\_t_/=      .'o O'-."
+    puts "      )   /   \\      / O o_.-`|   _   _"
+    puts "     (   ((   ))    /O_.-'  O |  (q\\_/p)"
+    puts "      \\  /\\) (/\\    | o   o  o|   /. .\\.-'''''-.     ___,"
+    puts "       `-\\  Y  /    |o   o O.-`  =\\_t_/=     /  `\\  ("
+    puts "          nn^nn     | O _.-'       )\\ ))__ __\\   |___)"
+    puts "                    '--`          (/-(/`  `nn---'"
   end
 
 end
