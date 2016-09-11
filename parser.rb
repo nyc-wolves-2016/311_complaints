@@ -13,8 +13,8 @@ module Parser
     #   QUERY_STRING = "?incident_address="
     # end
 
-  base_url =  "https://data.cityofnewyork.us/resource/qiim-tiai.json"
-  full_query_string = query_string + input.to_s + "&$order=created_date%20DESC&$limit=10"
+  base_url =  "https://data.cityofnewyork.us/resource/fvrb-kbbt.json"
+  full_query_string = query_string + input.to_s + "&$order=created_date%20DESC&$limit=20"
 
   jason_string_response = open(base_url + full_query_string).read
   ruby_hash_response = JSON.parse(jason_string_response)
